@@ -8,6 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SnkFAd3Idk+WfCKZT1gJBc2VHiIMev1HZqM4dc3UFHcA5tRbyYAOeX8yqih4nFqleLp5pw59SdAsUIZ/o2y+kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Small, safe tweaks (move to styles.css later if you want) -->
+    <style>
+      /* Slightly larger header logo */
+      .logo-img { height: 56px; }
+
+      /* Footer visual polish */
+      .footer-logo { height: 40px; display: block; margin: 0 0 8px; }
+      .footer-contact { list-style: none; padding: 0; margin: 10px 0 0; }
+      .footer-contact li { display: flex; align-items: center; gap: 8px; margin: 6px 0; opacity: .95; }
+      .footer-contact i { width: 16px; text-align: center; }
+    </style>
   </head>
   <body>
     <!-- Header & Navigation -->
@@ -45,7 +57,6 @@
           <div class="hero-buttons">
             <a href="https://www.amazon.sa/s?me=AHTG33JVQXB6Y&language=en&marketplaceID=A17E79C6D8DWNP" target="_blank" class="btn primary-btn">Shop on Amazon</a>
             <a href="https://www.noon.com/saudi-en/p-303598/" target="_blank" class="btn secondary-btn">Shop on Noon</a>
-            <!-- New, subtle CTA for contact -->
             <a href="contact.html" class="btn tertiary-btn">Contact Us</a>
           </div>
         </div>
@@ -132,12 +143,16 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (with logo + email + location) -->
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <h3>Sooqia</h3>
+          <img src="assets/logo.png" alt="Sooqia" class="footer-logo" />
           <p>Shop smart, live better – bringing curated products to your doorstep.</p>
+          <ul class="footer-contact">
+            <li><i class="fa fa-envelope"></i> <a href="mailto:info@sooqia.com">info@sooqia.com</a></li>
+            <li><i class="fa fa-map-marker-alt"></i> Riyadh, Saudi Arabia</li>
+          </ul>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
