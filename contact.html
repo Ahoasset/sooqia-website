@@ -1,206 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>Sooqia – Shop Smart, Live Better</title>
-    <meta
-      name="description"
-      content="Sooqia is a Riyadh-based e-commerce brand offering curated home, lifestyle and technology products. Shop our collections on Amazon and Noon while we build our new online store."
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome (icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-SnkFAd3Idk+WfCKZT1gJBc2VHiIMev1HZqM4dc3UFHcA5tRbyYAOeX8yqih4nFqleLp5pw59SdAsUIZ/o2y+kg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Header & Navigation -->
-    <header class="site-header">
-      <div class="container nav-container">
-        <!-- Updated logo: replaced text with image for brand consistency -->
-        <a href="#home" class="logo">
-          <img src="assets/logo.png" alt="Sooqia logo" class="logo-img" />
-        </a>
-        <nav id="navigation" class="navigation">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#marketplace">Marketplace</a></li>
-            <li><a href="#credentials">Credentials</a></li>
-            <!-- CHANGED: Contact now points to dedicated page -->
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Sooqia</title>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Shop Smart, Live Better</h1>
-          <p>
-            Quality products, attractive prices and attentive service – that’s our
-            promise. We’re currently selling through Amazon and Noon while we
-            build a smarter online shopping experience.
-          </p>
-          <div class="hero-buttons">
-            <!-- Updated call-to-action buttons with direct links to our active marketplaces -->
-            <a
-              href="https://www.amazon.sa/s?me=AHTG33JVQXB6Y&language=en&marketplaceID=A17E79C6D8DWNP"
-              target="_blank"
-              class="btn primary-btn"
-              >Shop on Amazon</a
-            >
-            <a
-              href="https://www.noon.com/saudi-en/p-303598/"
-              target="_blank"
-              class="btn secondary-btn"
-              >Shop on Noon</a
-            >
-          </div>
-        </div>
-        <div class="hero-image">
-          <!-- Swapped for a dark-themed illustration that matches our new brand palette -->
-          <img src="assets/hero_dark.png" alt="Sooqia e-commerce illustration" />
-        </div>
-      </div>
-    </section>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SnkFAd3Idk+WfCKZT1gJBc2VHiIMev1HZqM4dc3UFHcA5tRbyYAOeX8yqih4nFqleLp5pw59SdAsUIZ/o2y+kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .subtle { opacity: .9; font-size: .95rem; }
+    .calendly-embed { display:none; margin-top: 1rem; }
+    .select-inline { display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html#home" class="logo">
+        <img src="assets/logo.png" alt="Sooqia logo" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="index.html#marketplace">Marketplace</a></li>
+          <li><a href="index.html#credentials">Credentials</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+  <main>
+    <section class="contact-section">
       <div class="container">
-        <h2>About Sooqia</h2>
-        <p>
-          Founded in Riyadh, Sooqia is an up-and-coming e-commerce brand that
-          curates high-quality products for your home, lifestyle and
-          wellbeing. Our mission is to make smart shopping simple and joyful by
-          focusing on quality, value and service. We believe that shopping
-          should be convenient, trustworthy and rewarding. While our own online
-          storefront is under construction, we invite you to explore our
-          collection on trusted marketplaces.
-        </p>
-        <div class="values-grid">
-          <div class="value-card">
-            <h3>Mission</h3>
-            <p>
-              To enable customers to shop smart and live better through a
-              curated selection of everyday essentials and innovative
-              products, delivered with exceptional care.
-            </p>
-          </div>
-          <div class="value-card">
-            <h3>Vision</h3>
-            <p>
-              To become a trusted regional brand that redefines online
-              shopping by putting people, quality and sustainability first.
-            </p>
-          </div>
-          <div class="value-card">
-            <h3>Values</h3>
-            <p>
-              Customer-centricity, honesty, quality, innovation and respect
-              for our community and environment.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section id="categories" class="categories-section">
-      <div class="container">
-        <h2>Our Collections</h2>
-        <p class="section-lead">
-          Explore a diverse range of products that make everyday life easier
-          and more enjoyable. Our curated categories will continue to expand as
-          we grow.
-        </p>
-        <div class="categories-grid">
-          <div class="category-card">
-            <div class="category-icon"><i class="fa fa-home"></i></div>
-            <h3>Home &amp; Kitchen</h3>
-            <p>
-              Smart organisers, utensils and tools designed to simplify your
-              home life.
-            </p>
-          </div>
-          <div class="category-card">
-            <div class="category-icon"><i class="fa fa-bolt"></i></div>
-            <h3>Electronics &amp; Gadgets</h3>
-            <p>
-              Practical tech and accessories to keep you connected and
-              productive.
-            </p>
-          </div>
-          <div class="category-card">
-            <div class="category-icon"><i class="fa fa-heart"></i></div>
-            <h3>Health &amp; Beauty</h3>
-            <p>
-              Self-care products and grooming tools to help you look and feel
-              your best.
-            </p>
-          </div>
-          <div class="category-card">
-            <div class="category-icon"><i class="fa fa-futbol"></i></div>
-            <h3>Sports &amp; Outdoors</h3>
-            <p>
-              Gear and equipment for active lifestyles – from fitness to
-              adventure.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Marketplace Section -->
-    <section id="marketplace" class="marketplace-section">
-      <div class="container">
-        <h2>Where to Buy</h2>
-        <p class="section-lead">
-          Until our own store opens, you can find Sooqia products on leading
-          marketplaces.
-        </p>
-        <div class="marketplace-grid">
-          <a href="https://www.amazon.sa/s?me=AHTG33JVQXB6Y&language=en&marketplaceID=A17E79C6D8DWNP" target="_blank" class="marketplace-card">
-            <i class="fab fa-amazon fa-3x"></i>
-            <h3>Amazon</h3>
-            <p>Browse our curated products on Amazon Saudi Arabia.</p>
-          </a>
-          <a href="https://www.noon.com/saudi-en/p-303598/" target="_blank" class="marketplace-card">
-            <i class="fa fa-store fa-3x"></i>
-            <h3>Noon</h3>
-            <p>Discover exclusive deals on Noon.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section (cleaned – no phone/WhatsApp/form) -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p class="section-lead">
-          We’ll reply within <strong>24–48 hours</strong>. Prefer to book a meeting? Use our scheduling link below.
-        </p>
+        <h1>Contact Sooqia</h1>
+        <p class="subtle">We’ll reply within <strong>24–48 hours</strong>.</p>
 
         <div class="contact-grid">
+          <!-- Left: details -->
           <div class="contact-info">
             <div class="contact-item">
               <i class="fa fa-envelope"></i>
@@ -218,99 +59,106 @@
             </div>
           </div>
 
-          <!-- CTAs leading to dedicated page + Calendly -->
-          <div class="contact-form" style="display:flex;flex-direction:column;gap:0.75rem;">
-            <a class="btn primary-btn" href="contact.html">Open Contact Form</a>
-            <a
-              class="btn secondary-btn"
-              href="https://calendly.com/sooqiaksa/investor-networking-meeting-sooqia-com"
-              target="_blank" rel="noopener"
-            >Schedule a Meeting</a>
-            <p style="margin:0.5rem 0 0;font-size:.95rem;opacity:.9">
-              For investment, product submissions, partnerships and more — please use the contact form.
-            </p>
-          </div>
+          <!-- Right: the form -->
+          <form class="contact-form form" method="POST" action="https://formspree.io/f/mayvlvoy">
+            <input type="hidden" name="_subject" value="New contact from Sooqia.com" />
+
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-field">
+              <label for="whatsapp">WhatsApp Number</label>
+              <input id="whatsapp" name="whatsapp" type="tel" placeholder="+9665xxxxxxx" />
+            </div>
+
+            <div class="form-field">
+              <label for="nationality">Nationality</label>
+              <input id="nationality" name="nationality" type="text" />
+            </div>
+
+            <div class="form-field">
+              <label for="interest">I’m interested in</label>
+              <div class="select-inline">
+                <select id="interest" name="interest" required>
+                  <option value="">— Select an option —</option>
+                  <option value="Investment">Investment</option>
+                  <option value="Product to sell online">I have a product to sell online</option>
+                  <option value="Partnership">Partnership / Collaboration</option>
+                  <option value="Schedule a meeting">Schedule a meeting</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="subtle">Choose “Schedule a meeting” to open our booking below.</span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Tell us more</label>
+              <textarea id="message" name="message" rows="5" placeholder="Share any relevant details…"></textarea>
+            </div>
+
+            <button class="btn primary-btn" type="submit">Send Message</button>
+            <p class="subtle" style="margin-top:.5rem;">We’ll get back to you within 24–48 hours.</p>
+
+            <!-- Calendly inline embed (hidden until selected) -->
+            <div id="calendlyBlock" class="calendly-embed">
+              <h3 style="margin-top:1rem;">Book a Meeting</h3>
+              <div class="calendly-inline-widget"
+                   data-url="https://calendly.com/sooqiaksa/investor-networking-meeting-sooqia-com"
+                   style="min-width:320px;height:700px;"></div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Credentials Section -->
-    <section id="credentials" class="credentials-section">
-      <div class="container">
-        <h2>Company Information</h2>
-        <p class="section-lead">
-          For transparency and trust, here are our official registration details and address.
-        </p>
-        <div class="credentials-grid">
-          <div class="credential-card">
-            <h3>VAT Registration</h3>
-            <p>VAT Number: <strong>310548531700003</strong></p>
-          </div>
-          <div class="credential-card">
-            <h3>Commercial Registration</h3>
-            <p>CR Number: <strong>1010589297</strong></p>
-            <p>Issued in Riyadh, KSA</p>
-          </div>
-          <div class="credential-card">
-            <h3>Registered Address</h3>
-            <p>Building No.&nbsp;6949, Rasheed&nbsp;Ibn&nbsp;Masoud&nbsp;St.</p>
-            <p>Secondary No.&nbsp;3624, Al&nbsp;Noor&nbsp;District</p>
-            <p>Riyadh&nbsp;14272, Saudi&nbsp;Arabia</p>
-          </div>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Sooqia</h3>
+        <p>Shop smart, live better – bringing curated products to your doorstep.</p>
       </div>
-    </section>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#categories">Collections</a></li>
+          <li><a href="index.html#marketplace">Marketplace</a></li>
+          <li><a href="index.html#credentials">Credentials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social"><h4>Follow Us</h4></div>
+    </div>
+    <div class="container"><p class="copyright">© 2025 Sooqia. All rights reserved.</p></div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <h3>Sooqia</h3>
-          <p>
-            Shop smart, live better – bringing curated products to your
-            doorstep.
-          </p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#categories">Collections</a></li>
-            <li><a href="#marketplace">Marketplace</a></li>
-            <li><a href="#credentials">Credentials</a></li>
-            <!-- CHANGED: Footer contact goes to page -->
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/sooqia" target="_blank" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://twitter.com/sooqia" target="_blank" aria-label="Twitter"
-              ><i class="fab fa-x-twitter"></i
-            ></a>
-            <a href="https://www.linkedin.com/company/sooqia" target="_blank" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="container copyright">
-        <p>&copy; 2025 Sooqia. All rights reserved.</p>
-      </div>
-    </footer>
+  <!-- Calendly script (needed for inline embed) -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-    <script>
-      // Toggle mobile navigation
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.navigation');
-      if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-          nav.classList.toggle('open'));
-        });
-      }
-    </script>
-  </body>
+  <script>
+    // mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.navigation');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+    }
+
+    // show Calendly only if "Schedule a meeting" is selected
+    const interest = document.getElementById('interest');
+    const calendlyBlock = document.getElementById('calendlyBlock');
+    if (interest && calendlyBlock) {
+      interest.addEventListener('change', function() {
+        calendlyBlock.style.display = (this.value === 'Schedule a meeting') ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
 </html>
