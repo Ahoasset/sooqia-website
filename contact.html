@@ -8,13 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SnkFAd3Idk+WfCKZT1gJBc2VHiIMev1HZqM4dc3UFHcA5tRbyYAOeX8yqih4nFqleLp5pw59SdAsUIZ/o2y+kg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-specific refinements only -->
   <style>
-    .subtle { opacity: .9; font-size: .95rem; }
-    .calendly-embed { display:none; margin-top: 1rem; }
-    .select-inline { display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; }
+    .contact-page-wrap { max-width: 1100px; margin: 0 auto; }
+    .form-card { width:100%; background:rgba(0,0,0,.15); padding:24px; border-radius:14px; }
+    .form-card .form-field { margin-bottom:14px; }
+    .calendly-embed { margin-top:24px; }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html#home" class="logo">
@@ -36,94 +40,81 @@
 
   <main>
     <section class="contact-section">
-      <div class="container">
+      <div class="container contact-page-wrap">
         <h1>Contact Sooqia</h1>
-        <p class="subtle">We’ll reply within <strong>24–48 hours</strong>.</p>
+        <p style="opacity:.9">We’ll reply within <strong>24–48 hours</strong>.</p>
 
-        <div class="contact-grid">
-          <!-- Left: details -->
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fa fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p><a href="mailto:info@sooqia.com">info@sooqia.com</a></p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="fa fa-map-marker-alt"></i>
-              <div>
-                <h4>Location</h4>
-                <p>Riyadh, Saudi Arabia</p>
-              </div>
-            </div>
+        <!-- Full-width single column form -->
+        <form class="form form-card" method="POST" action="https://formspree.io/f/mayvlvoy">
+          <input type="hidden" name="_subject" value="New contact from Sooqia.com" />
+
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
           </div>
 
-          <!-- Right: the form -->
-          <form class="contact-form form" method="POST" action="https://formspree.io/f/mayvlvoy">
-            <input type="hidden" name="_subject" value="New contact from Sooqia.com" />
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
 
-            <div class="form-field">
-              <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
+          <div class="form-field">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+9665xxxxxxx" />
+          </div>
 
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
+          <div class="form-field">
+            <label for="nationality">Nationality</label>
+            <input id="nationality" name="nationality" type="text" />
+          </div>
 
-            <div class="form-field">
-              <label for="whatsapp">WhatsApp Number</label>
-              <input id="whatsapp" name="whatsapp" type="tel" placeholder="+9665xxxxxxx" />
-            </div>
+          <div class="form-field">
+            <label for="interest">I’m interested in</label>
+            <select id="interest" name="interest" required>
+              <option value="">— Select an option —</option>
+              <option value="Investment">Investment</option>
+              <option value="Product to sell online">I have a product to sell online</option>
+              <option value="Partnership">Partnership / Collaboration</option>
+              <option value="Schedule a meeting">Schedule a meeting</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
 
-            <div class="form-field">
-              <label for="nationality">Nationality</label>
-              <input id="nationality" name="nationality" type="text" />
-            </div>
+          <div class="form-field">
+            <label for="message">Tell us more</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share any relevant details…"></textarea>
+          </div>
 
-            <div class="form-field">
-              <label for="interest">I’m interested in</label>
-              <div class="select-inline">
-                <select id="interest" name="interest" required>
-                  <option value="">— Select an option —</option>
-                  <option value="Investment">Investment</option>
-                  <option value="Product to sell online">I have a product to sell online</option>
-                  <option value="Partnership">Partnership / Collaboration</option>
-                  <option value="Schedule a meeting">Schedule a meeting</option>
-                  <option value="Other">Other</option>
-                </select>
-                <span class="subtle">Choose “Schedule a meeting” to open our booking below.</span>
-              </div>
-            </div>
+          <button class="btn primary-btn" type="submit">Send Message</button>
 
-            <div class="form-field">
-              <label for="message">Tell us more</label>
-              <textarea id="message" name="message" rows="5" placeholder="Share any relevant details…"></textarea>
-            </div>
-
-            <button class="btn primary-btn" type="submit">Send Message</button>
-            <p class="subtle" style="margin-top:.5rem;">We’ll get back to you within 24–48 hours.</p>
-
-            <!-- Calendly inline embed (hidden until selected) -->
-            <div id="calendlyBlock" class="calendly-embed">
-              <h3 style="margin-top:1rem;">Book a Meeting</h3>
-              <div class="calendly-inline-widget"
-                   data-url="https://calendly.com/sooqiaksa/investor-networking-meeting-sooqia-com"
-                   style="min-width:320px;height:700px;"></div>
-            </div>
-          </form>
-        </div>
+          <!-- Optional meeting booking (always available at the bottom) -->
+          <div class="calendly-embed">
+            <h3 style="margin:18px 0 8px;">Optional: Book a Meeting</h3>
+            <div class="calendly-inline-widget"
+                 data-url="https://calendly.com/sooqiaksa/investor-networking-meeting-sooqia-com"
+                 style="min-width:320px;height:700px;"></div>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
+  <!-- Footer with logo + contact details (moved here from page body) -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <h3>Sooqia</h3>
+        <img src="assets/logo.png" alt="Sooqia" style="height:40px; display:block; margin:0 0 8px;" />
         <p>Shop smart, live better – bringing curated products to your doorstep.</p>
+        <ul style="list-style:none; padding:0; margin:10px 0 0;">
+          <li style="display:flex; gap:8px; align-items:center; margin:6px 0; opacity:.95;">
+            <i class="fa fa-envelope" style="width:16px; text-align:center;"></i>
+            <a href="mailto:info@sooqia.com">info@sooqia.com</a>
+          </li>
+          <li style="display:flex; gap:8px; align-items:center; margin:6px 0; opacity:.95;">
+            <i class="fa fa-map-marker-alt" style="width:16px; text-align:center;"></i>
+            Riyadh, Saudi Arabia
+          </li>
+        </ul>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
@@ -140,24 +131,14 @@
     <div class="container"><p class="copyright">© 2025 Sooqia. All rights reserved.</p></div>
   </footer>
 
-  <!-- Calendly script (needed for inline embed) -->
+  <!-- Calendly script -->
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
   <script>
     // mobile nav
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.navigation');
     if (navToggle && nav) {
       navToggle.addEventListener('click', () => nav.classList.toggle('open'));
-    }
-
-    // show Calendly only if "Schedule a meeting" is selected
-    const interest = document.getElementById('interest');
-    const calendlyBlock = document.getElementById('calendlyBlock');
-    if (interest && calendlyBlock) {
-      interest.addEventListener('change', function() {
-        calendlyBlock.style.display = (this.value === 'Schedule a meeting') ? 'block' : 'none';
-      });
     }
   </script>
 </body>
