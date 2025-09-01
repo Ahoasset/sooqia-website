@@ -1,54 +1,37 @@
-<!-- Full-width single column form -->
-<form id="contactForm" class="form form-card" method="POST" action="https://formspree.io/f/xnnbddkb">
-  <input type="hidden" name="_subject" value="New contact from Sooqia.com" />
+<!-- Full-width single column form using Google Forms -->
+<div class="form form-card" role="region" aria-label="Contact Sooqia Form">
+  <h2 style="margin:0 0 12px;">Contact Sooqia</h2>
+  <p style="opacity:.9;margin:0 0 16px;">
+    Please fill out the form below and we’ll reply within <strong>24–48 hours</strong>.
+  </p>
 
-  <div class="form-field">
-    <label for="name">Full Name</label>
-    <input id="name" name="name" type="text" required />
+  <!-- Responsive Google Form Embed -->
+  <div style="position:relative; width:100%; max-width:100%;">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdO-_ujoeDJbJCBIdKoG81uZljWOsUbHK7sKTQczGvD2NVBTA/viewform?embedded=true"
+      width="100%"
+      height="1100"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      style="border:0; min-height: 1000px;"
+      loading="lazy"
+      title="Contact Sooqia Form">
+      Loading…
+    </iframe>
   </div>
 
-  <div class="form-field">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required />
-  </div>
+  <!-- Fallback link -->
+  <p style="margin-top:10px; font-size:.95rem;">
+    If the form doesn’t load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO-_ujoeDJbJCBIdKoG81uZljWOsUbHK7sKTQczGvD2NVBTA/viewform"
+    target="_blank" rel="noopener">click here to open it directly</a>.
+  </p>
 
-  <div class="form-field">
-    <label for="whatsapp">WhatsApp Number</label>
-    <input id="whatsapp" name="whatsapp" type="tel" placeholder="+9665xxxxxxx" />
-  </div>
-
-  <div class="form-field">
-    <label for="nationality">Nationality</label>
-    <input id="nationality" name="nationality" type="text" />
-  </div>
-
-  <div class="form-field">
-    <label for="interest">I’m interested in</label>
-    <select id="interest" name="interest" required>
-      <option value="">— Select an option —</option>
-      <option value="Investment">Investment</option>
-      <option value="Product to sell online">I have a product to sell online</option>
-      <option value="Partnership">Partnership / Collaboration</option>
-      <option value="Schedule a meeting">Schedule a meeting</option>
-      <option value="Other">Other</option>
-    </select>
-  </div>
-
-  <div class="form-field">
-    <label for="message">Tell us more</label>
-    <textarea id="message" name="message" rows="5" placeholder="Share any relevant details…"></textarea>
-  </div>
-
-  <button class="btn primary-btn" type="submit">Send Message</button>
-
-  <!-- Status message -->
-  <p id="formStatus" style="margin-top:12px; font-weight:600;"></p>
-
-  <!-- Optional meeting booking -->
+  <!-- Optional meeting booking (Calendly) -->
   <div class="calendly-embed">
     <h3 style="margin:18px 0 8px;">Optional: Book a Meeting</h3>
     <div class="calendly-inline-widget"
          data-url="https://calendly.com/sooqiaksa/investor-networking-meeting-sooqia-com"
          style="min-width:320px;height:700px;"></div>
   </div>
-</form>
+</div>
